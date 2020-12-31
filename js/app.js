@@ -157,5 +157,8 @@ $(document).ready(function()
             $(".loadMoreAll:hidden").slice(0, 3).slideDown(10);
         });
 
+   
+
+
 });
 

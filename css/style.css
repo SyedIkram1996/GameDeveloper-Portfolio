@@ -17,6 +17,8 @@ body
 }
 
 
+
+
 html
 {
     scroll-behavior: smooth;
@@ -258,6 +260,15 @@ section.about .social a i.fa-instagram
     color:#e4405f;
 }
 
+section.about .social a i.fa-whatsapp
+{
+    color: green;
+}
+
+section.about .social a i.fa-facebook-messenger
+{
+    color: blue;
+}
 
 
 /* section.about .social a img
@@ -479,6 +490,7 @@ section.contact .card-wrapper .card i
 {
     font-size: 50px;
     margin-bottom: 0.5rem;
+    color: black;
 }
 
 section.contact .card-wrapper .card h1
@@ -554,7 +566,7 @@ footer .footer-socials a .fa-instagram
 .hamberger
 {
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 40px;
     z-index: 11;
     background: none;
@@ -678,6 +690,18 @@ footer .footer-socials a .fa-instagram
     color: #fff;
 }
 
+.contctbtn
+{
+    display: none;
+}
+
+.sub-filter-gallery ul li 
+{
+    text-align: center;
+}
+
+
+
 
 
 
@@ -694,6 +718,12 @@ footer .footer-socials a .fa-instagram
     .hamberger
     {
         display: block;
+    }
+
+    .hamberger i
+    {
+        font-size: 30px;
+        color: var(--pure);
     }
 
     .site-main-wrapper .brandingmob
@@ -819,6 +849,11 @@ footer .footer-socials a .fa-instagram
         grid-template-columns: repeat(1,1fr);
     }
 
+    section.services .card-wrapper .card
+    {
+        margin-left: -2rem;
+    }
+
     section.freelancer h1 {
         line-height: 2rem;
         font-size: 1.5rem;
@@ -848,7 +883,21 @@ footer .footer-socials a .fa-instagram
     {
         grid-template-columns: repeat(1,1fr);
     }
+    .contctbtn
+    {
+        display: block;
+    }
 
+    .filter-gallery ul 
+    {
+        justify-content: center;
+    }
+
+    .sub-filter-gallery ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
 
 
     
