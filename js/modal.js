@@ -13,7 +13,7 @@ var img5 = document.getElementById("myImg5");
 var img6 = document.getElementById("myImg6");
 var img7 = document.getElementById("myImg7");
 var img8 = document.getElementById("myImg8");
-var img9 = document.getElementById("myImg9");
+// var img9 = document.getElementById("myImg9");
 var img10 = document.getElementById("myImg10");
 var img11 = document.getElementById("myImg11"); 
 var img12 = document.getElementById("myImg12");
@@ -29,7 +29,7 @@ var imgfinal5 = document.getElementById("myfinalImg5");
 var imgfinal6 = document.getElementById("myfinalImg6");
 var imgfinal7 = document.getElementById("myfinalImg7");
 var imgfinal8 = document.getElementById("myfinalImg8");
-var imgfinal9 = document.getElementById("myfinalImg9");
+// var imgfinal9 = document.getElementById("myfinalImg9");
 var imgfinal10 = document.getElementById("myfinalImg10");
 var imgfinal11 = document.getElementById("myfinalImg11");
 var imgfinal12 = document.getElementById("myfinalImg12");
@@ -98,12 +98,12 @@ img8.onclick = function()
     captionText.innerHTML = this.alt;
 }
 
-img9.onclick = function()
-{
-    modal.style.display="block";
-    modalImg.src = imgfinal9.src;
-    captionText.innerHTML = this.alt;
-}
+// img9.onclick = function()
+// {
+//     modal.style.display="block";
+//     modalImg.src = imgfinal9.src;
+//     captionText.innerHTML = this.alt;
+// }
 
 img10.onclick = function()
 {

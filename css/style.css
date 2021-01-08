@@ -637,6 +637,8 @@ footer .footer-socials a .fa-instagram
     background: none;
     outline: none;
     cursor:pointer;
+    color: var(--pure);
+    font-size: 40px;
     
 }
 
