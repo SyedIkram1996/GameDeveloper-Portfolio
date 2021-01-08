@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syed Ikram Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -147,6 +148,8 @@
         <div class="container">
             <h1 class="section-heading"><span>My </span> Work</h1>
             <p>Some Work I did in Unity and Blender</p>
+
+            
             <!-- Pagination For All Start -->
             <div class="filter-gallery">
             <ul>
@@ -158,7 +161,30 @@
             <!-- Pagination For All End -->
 
             <!-- Pagination For Unity Start -->
-            <div id="sub-filter-gallery" class="sub-filter-gallery" style="display:none;">
+            <div class="accordion accordionunity" id="accordionExample" style="display:none;">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button style="font-weight: bold; color: black; background-color: #3DCFD3" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sort By:
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div id="sub-filter-gallery" class="sub-filter-gallery" style="display:none;">
+                            <ul>
+                                <li class="sub_list active" data-filter="allunity">All(Unity)</li>
+                                <li class="sub_list" data-filter="racing">Racing</li>
+                                <li class="sub_list" data-filter="shooting">Shooting</li>
+                                <li class="sub_list" data-filter="adventure">Adventure</li>
+                                <li class="sub_list" data-filter="vr">VR</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- <div id="sub-filter-gallery" class="sub-filter-gallery" style="display:none;">
                 <ul>
                     <li class="sub_list active" data-filter="allunity">All(Unity)</li>
                     <li class="sub_list" data-filter="racing">Racing</li>
@@ -166,11 +192,35 @@
                     <li class="sub_list" data-filter="adventure">Adventure</li>
                     <li class="sub_list" data-filter="vr">VR</li>
                 </ul>
-            </div>
+            </div> -->
             <!-- Pagination For Unity End -->
 
             <!-- Pagination For Blender Start -->
-            <div id="sub-filter-gallery-blender" class="sub-filter-gallery" style="display:none;">
+            <div class="accordion accordionblender" id="accordionExample" style="display:none;">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button style="font-weight: bold; color: black; background-color: #3DCFD3; " class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sort By:
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div id="sub-filter-gallery-blender" class="sub-filter-gallery" style="display:none;">
+                            <ul>
+                                <li class="sub_list_blender active" data-filter="allblender">All(Blender)</li>
+                                <li class="sub_list_blender" data-filter="3dmodels">3D Models</li>
+                                <li class="sub_list_blender" data-filter="Sculpts">Sculpts</li>
+                                <li class="sub_list_blender" data-filter="animation">Animations</li>
+                                <li class="sub_list_blender" data-filter="vfx">VFX</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <!-- <div id="sub-filter-gallery-blender" class="sub-filter-gallery" style="display:none;">
                 <ul>
                     <li class="sub_list_blender active" data-filter="allblender">All(Blender)</li>
                     <li class="sub_list_blender" data-filter="3dmodels">3D Models</li>
@@ -178,7 +228,7 @@
                     <li class="sub_list_blender" data-filter="animation">Animations</li>
                     <li class="sub_list_blender" data-filter="vfx">VFX</li>
                 </ul>
-            </div>
+            </div> -->
             <!-- Pagination For Blendr End -->
 
             <!-- Main Gallery Of Work Start -->
@@ -329,6 +379,7 @@
 <script src="./js/app.js"></script>
 <script src="./js/modal.js"></script>
 <script src="https://kit.fontawesome.com/7b62576e08.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 
 </body>

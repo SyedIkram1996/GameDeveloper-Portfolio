@@ -7,6 +7,8 @@ $(document).ready(function()
 
     var sfg = document.getElementById("sub-filter-gallery");
     var sfgb = document.getElementById("sub-filter-gallery-blender");
+    var accorExample = document.querySelector('.accordionunity');
+    var accorExample2 = document.querySelector('.accordionblender');
 
     hamberger.addEventListener('click',function()
     {
@@ -49,6 +51,8 @@ $(document).ready(function()
         {
             sfg.style.display = "block";
             sfgb.style.display = "none";
+            accorExample.style.display = "block";
+            accorExample2.style.display = "none";
             $('#sub-filter-gallery-blender ul li:nth-child(1)').addClass('active').siblings().removeClass('active');
         }
 
@@ -56,12 +60,16 @@ $(document).ready(function()
         {
             sfgb.style.display = "block";
             sfg.style.display = "none";
+            accorExample.style.display = "none";
+            accorExample2.style.display = "block";
             $('#sub-filter-gallery ul li:nth-child(1)').addClass('active').siblings().removeClass('active');
         }
         else
         {
             sfg.style.display = "none";
             sfgb.style.display = "none";
+            accorExample.style.display = "none";
+            accorExample2.style.display = "none";
             $('#sub-filter-gallery ul li:nth-child(1)').addClass('active').siblings().removeClass('active');
             $('#sub-filter-gallery-blender ul li:nth-child(1)').addClass('active').siblings().removeClass('active');
 
