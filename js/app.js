@@ -31,7 +31,7 @@ $(document).ready(function()
             loadMore.style.visibility = "visible";
              //Load More Button
     
-        $(".loadMoreAll").slice(3,11).hide();
+        $(".loadMoreAll").slice(3,13).hide();
         $("#loadMore").on('click', function (e) {
             e.preventDefault();
             $(".loadMoreAll:hidden").slice(0, 3).slideDown(1000);
@@ -151,7 +151,7 @@ $(document).ready(function()
 
     //Load More Button
     
-        $(".loadMoreAll").slice(3,11).hide();
+        $(".loadMoreAll").slice(3,13).hide();
         $("#loadMore").on('click', function (e) {
             e.preventDefault();
             $(".loadMoreAll:hidden").slice(0, 3).slideDown(10);

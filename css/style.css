@@ -434,6 +434,26 @@ section.work .card-wrapper .card:hover
     cursor: pointer;
 }
 
+section.work .card-wrapper .card .modelred
+{
+    color: red;
+}
+
+section.work .card-wrapper .card .sculptyellow
+{
+    color: yellow;
+}
+
+section.work .card-wrapper .card .animationgreen
+{
+    color:lightgreen;
+}
+
+section.work .card-wrapper .card .unitypurple
+{
+    color:rgb(231, 80, 231);
+}
+
 section.work .card-wrapper .card button
 {
     position:absolute;
