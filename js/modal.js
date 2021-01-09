@@ -17,7 +17,8 @@ var img8 = document.getElementById("myImg8");
 var img10 = document.getElementById("myImg10");
 var img11 = document.getElementById("myImg11"); 
 var img12 = document.getElementById("myImg12");
-var img13 = document.getElementById("myImg13"); 
+var img13 = document.getElementById("myImg13");
+var img14 = document.getElementById("myImg14");  
 
 
 //the image we want to show on modal
@@ -34,6 +35,7 @@ var imgfinal10 = document.getElementById("myfinalImg10");
 var imgfinal11 = document.getElementById("myfinalImg11");
 var imgfinal12 = document.getElementById("myfinalImg12");
 var imgfinal13 = document.getElementById("myfinalImg13");
+var imgfinal14 = document.getElementById("myfinalImg14");
 
 //caption text
 var captionText = document.getElementById("caption");
@@ -130,6 +132,13 @@ img13.onclick = function()
 {
     modal.style.display="block";
     modalImg.src = imgfinal13.src;
+    captionText.innerHTML = this.alt;
+}
+
+img14.onclick = function()
+{
+    modal.style.display="block";
+    modalImg.src = imgfinal14.src;
     captionText.innerHTML = this.alt;
 }
 
