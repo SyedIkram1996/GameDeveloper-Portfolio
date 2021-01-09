@@ -468,6 +468,8 @@ section.work .card-wrapper .card .animationgreen
 section.work .card-wrapper .card .unitypurple
 {
     color:rgb(231, 80, 231);
+    /* font-size: 15px; */
+    font-style: italic;
 }
 
 section.work .card-wrapper .card button
@@ -477,7 +479,8 @@ section.work .card-wrapper .card button
     background: none;
     border: none;
     color: var(--pure);
-    left: 5px;
+    /* left: 5px; */
+    width: 100%;
 }
 
 section.work #loadMore
@@ -719,19 +722,19 @@ footer .footer-socials a .fa-instagram
 .sub-filter-gallery ul li
 {
     list-style:none;
-    padding: 2px 20px;
+    padding: 0px 20px;
     /* margin: 5px; */
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.2s ease;
     margin-top: 2rem;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .sub-filter-gallery ul li.active
 {
-    background: black;
-    color: #fff;
+    background: none;
+    color: red;
 }
 
 .contctbtn
@@ -938,9 +941,11 @@ footer .footer-socials a .fa-instagram
     }
 
     .sub-filter-gallery ul {
-        display: grid;
+        /* display: grid; */
+        display: block; 
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
+        padding-left: 0;
     }
 
     .modal .modal-content
